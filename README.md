@@ -325,14 +325,19 @@ When messages were dispatched from each user across different ports:
 3. `Hello from User 1 on Port 9001!`
 4. `Hello from User 2 on Port 9001!`
 
-#### Browser Test Snapshots:
+### Test Results & Browser Screenshots
 
-| Browser Tab & Server Port | Rendered Messages List |
-| :--- | :--- |
-| **Tab 1 (`http://localhost:9000`)** | • Hello from User 1 on Port 9000!<br>• Hello from User 2 on Port 9000!<br>• Hello from User 1 on Port 9001!<br>• Hello from User 2 on Port 9001! |
-| **Tab 2 (`http://localhost:9000`)** | • Hello from User 1 on Port 9000!<br>• Hello from User 2 on Port 9000!<br>• Hello from User 1 on Port 9001!<br>• Hello from User 2 on Port 9001! |
-| **Tab 3 (`http://localhost:9001`)** | • Hello from User 1 on Port 9000!<br>• Hello from User 2 on Port 9000!<br>• Hello from User 1 on Port 9001!<br>• Hello from User 2 on Port 9001! |
-| **Tab 4 (`http://localhost:9001`)** | • Hello from User 1 on Port 9000!<br>• Hello from User 2 on Port 9000!<br>• Hello from User 1 on Port 9001!<br>• Hello from User 2 on Port 9001! |
+#### 1. Tab 1: User 1 on Port 9000 (`http://localhost:9000`)
+![Tab 1 - User 1 on Port 9000](assets/tab1-port9000-user1.png)
+
+#### 2. Tab 2: User 2 on Port 9000 (`http://localhost:9000`)
+![Tab 2 - User 2 on Port 9000](assets/tab2-port9000-user2.png)
+
+#### 3. Tab 3: User 1 on Port 9001 (`http://localhost:9001`)
+![Tab 3 - User 1 on Port 9001](assets/tab3-port9001-user1.png)
+
+#### 4. Tab 4: User 2 on Port 9001 (`http://localhost:9001`)
+![Tab 4 - User 2 on Port 9001](assets/tab4-port9001-user2.png)
 
 **Result**: Every user on every server instance received 100% of all messages in real time via the central Redis broker.
 
